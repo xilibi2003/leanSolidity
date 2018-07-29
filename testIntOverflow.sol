@@ -19,4 +19,11 @@ contract TestFlow {
         uint256 a =  mm * 2;
         return a;
     }
+
+    uint8 c;
+
+    function add(uint8 a, uint8 b ) public returns (uint8) {
+        c = a + b;
+        return c;
+    }
 }

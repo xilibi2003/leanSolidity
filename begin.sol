@@ -1,11 +1,8 @@
-pragma solidity ^0.4.0;
-
-// 定义一个合约
+pragma solidity ^0.4.24;  //  0.4.25 - 0.5
 
 contract SimpleStorage {
-
     uint storedData;
-    
+
     function set(uint x) public {
         storedData = x;
     }
@@ -13,4 +10,5 @@ contract SimpleStorage {
     function get() public constant returns (uint) {
         return storedData;
     }
+
 }
