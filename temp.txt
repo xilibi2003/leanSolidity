@@ -1,0 +1,13 @@
+
+int a = 1;
+a = "Upchain";
+
+var b;
+
+
+b = "hello";
+
+b = 10;
+
+a = 10 + 10 + 2;
+
