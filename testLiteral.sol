@@ -34,7 +34,7 @@ contract testLiteral{
         return "Tiny\u718A";
     }
 
-    function hexLiteralBytes() public pure returns (bytes2, bytes1, bytes1) {
+    function hexLiteralBytes() public pure  returns (bytes2, bytes1, bytes1) {
      bytes2 a = hex"aabb";
      return (a, a[0], a[1]);
  }
