@@ -69,7 +69,7 @@ contract testCast {
         //删除dataArray会影响y，y也将被赋值为初值。
         delete dataArray;
         //报错，因为删除是一个赋值操作，不能向引用类型的storage直接赋值从而报错
-        delete y;
+        /* delete y; */
 
     }
 
