@@ -12,13 +12,15 @@ contract testContract {
         return "hello";
     }
 
+    function kill() public {
+      require(msg.sender == owner);
+      selfdestruct(owner);  // 销毁合约
+    }
+
     function innocence() public {
         selfdestruct(owner);  // 销毁合约
     }
-
 }
-
-
 
 contract testCall {
 
